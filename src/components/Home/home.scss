@@ -1,0 +1,102 @@
+.home {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .searchdiv {
+        height: 210px;
+        background: linear-gradient(to top, white, black);
+        margin-bottom: 20px;
+
+        h2 {
+            color: antiquewhite;
+            font-style: italic;
+            padding-top: 40px;
+        }
+
+        .searchmovie {
+            width: 60%;
+            margin-top: 40px;
+        }
+    }
+}
+
+.datadiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 14px;
+
+    img {
+        height: 300px;
+        width: 200px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .title {
+        width: 200px;
+
+            &:hover{
+                h5{
+                   color: rgb(0, 128, 255);
+                }
+            }
+        
+        h5 {
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .home .searchdiv .searchmovie {
+        width: 70%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .home .searchdiv .searchmovie {
+        width: 80%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .home .datadiv {
+        gap: 22px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .home .datadiv {
+        gap: 37px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .home .datadiv {
+        gap: 35px;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .home .datadiv {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:483px) {
+    .home .datadiv {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
