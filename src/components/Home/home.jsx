@@ -49,19 +49,11 @@ const Home = () => {
 
   return (
     <div className='container home'>
-      {/* <header>
-      <img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.underconsideration.com%2Fbrandnew%2Farchives%2Fnew_logo_for_the_movie_database.php&psig=AOvVaw12Nkw8tV3eF3ij1CV2BpVT&ust=1720779428877000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjmjYbhnocDFQAAAAAdAAAAABAE'></img>
-        <div className='main'>
-        <div>Home</div>
-        <div>Categories</div>
-        <div>Contact Us</div>
-        </div>
-      </header> */}
 
       <div className='searchdiv'>
         <h2>Get Started With Your Journey To Cinematic Adventures...</h2>
-        <TextField className='searchmovie' id="outlined-basic" label="Search movie" variant="outlined" 
-        onChange={(e) => search(e.target.value)} />
+        <TextField className='searchmovie' id="outlined-basic" label="Search movie" variant="outlined"
+          onChange={(e) => search(e.target.value)} />
       </div>
 
       <div className='container datadiv'>
